@@ -1,0 +1,120 @@
+{
+  "planHash": "02add69d17c5cb4f77f5962308e87a54b93f8cd933b637476726b1ecac3e06e3",
+  "phase": "standalone",
+  "recordedAtUtc": "2026-10-22T18:25:44.2512228Z",
+  "retryCount": 2,
+  "resetBaseline": false,
+  "complete": true,
+  "result": {
+    "setupSucceeded": true,
+    "setupDurationMs": 4545,
+    "setupFailureOutput": null,
+    "assertions": [
+      {
+        "name": "playwright-version",
+        "kind": "process",
+        "verificationMethod": "output-contains",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "Version 1.64.1\r\n",
+        "durationMs": 4383
+      },
+      {
+        "name": "tests-pass",
+        "kind": "process",
+        "verificationMethod": "test-results",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "npm warn Unknown env config \u0022scripts-prepend-node-path\u0022. This will stop working in the next major version of npm. See \u0060npm help npmrc\u0060 for supported config options.\r\n\r\n\u003E agentq@1.0.0 test\r\n\u003E playwright test tests/carrito.spec.ts --project=chrome\r\n\r\n\r\nRunning 1 test using 1 worker\r\n\r\n\r\nBrowser event log:\r\n2026-10-22T18:25:24.911Z BROWSER Google Chrome 155.0.8059.85\r\n2026-10-22T18:25:24.911Z START abrir tienda\r\n2026-10-22T18:25:24.989Z REQUEST GET https://www.demoblaze.com/\r\n2026-10-22T18:25:26.225Z CONSOLE warning: VIDEOJS: WARN: A plugin named \u0022reloadSourceOnError\u0022 already exists. You may want to avoid re-registering plugins!\r\n2026-10-22T18:25:26.511Z REQUEST GET https://api.demoblaze.com/entries\r\n2026-10-22T18:25:34.865Z PASS tienda cargada: https://www.demoblaze.com/ | t\u00EDtulo=STORE\r\n2026-10-22T18:25:34.867Z START seleccionar categor\u00EDa Laptops\r\n2026-10-22T18:25:35.032Z REQUEST POST https://api.demoblaze.com/bycat\r\n2026-10-22T18:25:35.335Z PASS respuesta de categor\u00EDa: HTTP 200\r\n2026-10-22T18:25:35.364Z PASS producto visible: Sony vaio i5\r\n2026-10-22T18:25:35.385Z PASS producto visible: Sony vaio i7\r\n2026-10-22T18:25:35.406Z PASS producto visible: MacBook air\r\n2026-10-22T18:25:35.407Z START abrir producto MacBook air\r\n2026-10-22T18:25:35.484Z REQUEST GET https://www.demoblaze.com/prod.html?idp_=11\r\n2026-10-22T18:25:35.833Z CONSOLE warning: VIDEOJS: WARN: A plugin named \u0022reloadSourceOnError\u0022 already exists. You may want to avoid re-registering plugins!\r\n2026-10-22T18:25:35.973Z REQUEST POST https://api.demoblaze.com/view\r\n2026-10-22T18:25:36.268Z PASS detalles del producto visibles: https://www.demoblaze.com/prod.html?idp_=11\r\n2026-10-22T18:25:36.268Z START agregar producto al carrito\r\n2026-10-22T18:25:36.343Z REQUEST POST https://api.demoblaze.com/addtocart\r\n2026-10-22T18:25:36.657Z DIALOG alert: Product added\r\n2026-10-22T18:25:36.665Z PASS alerta Product added aceptada\r\n2026-10-22T18:25:36.666Z START abrir carrito\r\n2026-10-22T18:25:36.730Z REQUEST GET https://www.demoblaze.com/cart.html\r\n2026-10-22T18:25:37.040Z CONSOLE warning: VIDEOJS: WARN: A plugin named \u0022reloadSourceOnError\u0022 already exists. You may want to avoid re-registering plugins!\r\n2026-10-22T18:25:37.101Z REQUEST POST https://api.demoblaze.com/viewcart\r\n2026-10-22T18:25:37.332Z REQUEST POST https://api.demoblaze.com/view\r\n2026-10-22T18:25:37.571Z PASS carrito contiene MacBook air | precio=700\r\n  ok 1 [chrome] \u203A tests\\carrito.spec.ts:4:5 \u203A agrega una laptop al carrito y la muestra en la lista (14.6s)\r\n\r\n  1 passed (22.2s)\r\n",
+        "durationMs": 25583,
+        "testResults": {
+          "testFramework": "unknown",
+          "runnerDetectedFrom": "none",
+          "testsTotal": 0,
+          "testsPassed": 0,
+          "testsFailed": 0,
+          "testsSkipped": 0,
+          "parseFailed": true
+        }
+      }
+    ],
+    "executions": [
+      {
+        "source": "setup[0]",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.cmd",
+        "args": [
+          "ci"
+        ],
+        "cwd": "C:\\AgentQ",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32",
+        "nodeExecutable": "C:\\Program Files\\nodejs\\node.EXE",
+        "nodeVersion": "v26.2.0",
+        "packageManager": "npm",
+        "packageManagerExecutable": "C:\\Program Files\\nodejs\\npm.cmd",
+        "packageManagerVersion": "11.13.0",
+        "cleanup": {
+          "RootProcessId": 25668,
+          "Completed": true,
+          "ProcessesObserved": 5,
+          "ProcessesTerminated": 1,
+          "Failure": null
+        }
+      },
+      {
+        "source": "playwright-version",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npx.CMD",
+        "args": [
+          "playwright",
+          "--version"
+        ],
+        "cwd": "C:\\AgentQ",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32",
+        "nodeExecutable": null,
+        "nodeVersion": null,
+        "packageManager": null,
+        "packageManagerExecutable": null,
+        "packageManagerVersion": null,
+        "cleanup": {
+          "RootProcessId": 10048,
+          "Completed": true,
+          "ProcessesObserved": 7,
+          "ProcessesTerminated": 1,
+          "Failure": null
+        }
+      },
+      {
+        "source": "tests-pass",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.cmd",
+        "args": [
+          "test"
+        ],
+        "cwd": "C:\\AgentQ",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32",
+        "nodeExecutable": "C:\\Program Files\\nodejs\\node.EXE",
+        "nodeVersion": "v26.2.0",
+        "packageManager": "npm",
+        "packageManagerExecutable": "C:\\Program Files\\nodejs\\npm.cmd",
+        "packageManagerVersion": "11.13.0",
+        "cleanup": {
+          "RootProcessId": 20056,
+          "Completed": true,
+          "ProcessesObserved": 20,
+          "ProcessesTerminated": 1,
+          "Failure": null
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "generatedAt": "2026-10-22T18:17:03Z",
+  "generatedOnPlatform": "win32",
+  "projectType": "other",
+  "setup": [
+    {
+      "command": "npm",
+      "args": ["ci"],
+      "timeoutSeconds": 600
+    }
+  ],
+  "assertions": [
+    {
+      "name": "playwright-version",
+      "kind": "process",
+      "command": "npx",
+      "args": ["playwright", "--version"],
+      "verificationMethod": "output-contains",
+      "expected": "Version 1.64.1",
+      "timeoutSeconds": 30
+    },
+    {
+      "name": "tests-pass",
+      "kind": "process",
+      "command": "npm",
+      "args": ["test"],
+      "verificationMethod": "test-results",
+      "expected": "0",
+      "timeoutSeconds": 180
+    }
+  ]
+}
